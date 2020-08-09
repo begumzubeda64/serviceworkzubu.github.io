@@ -1,0 +1,59 @@
+.first{
+    height: 100px;
+    background-color: brown;
+}
+.bdr{
+    height: 20px;
+    background-color: darkblue;
+}
+.bdr1{
+    height: 20px;
+    background-color: red;
+}
+.dbox{
+    background-color: rosybrown;
+    border: 1px solid;
+}
+
+.cbox{
+    border: 5px solid;
+}
+.arow{
+    border: 10px solid yellow;
+}
+.adiv{
+    height: 60px;
+    background-color: crimson;
+}
+.bdiv{
+    height: 60px;
+    background-color: palevioletred ;
+}
+.cdiv{
+    height: 60px;
+    background-color: chocolate ;
+}
+.ddiv{
+    height: 60px;
+    background-color: red;
+}
+.ediv{
+    height: 60px;
+    background-color: forestgreen;
+}
+.fdiv{
+    height: 60px;
+    background-color: turquoise ;
+}
+.bcol{
+    border: 3px solid red;
+}
+.ccol{
+    border: 3px solid blue;
+}
+.dcol{
+    border: 3px solid forestgreen;
+}
+.ecol{
+    border: 3px solid palevioletred;
+}
