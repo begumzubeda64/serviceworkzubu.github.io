@@ -1,0 +1,26 @@
+{
+  "name": "okayg_service_worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/begumzubeda64/serviceworkzubu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/begumzubeda64/serviceworkzubu.github.io/issues"
+  },
+  "homepage": "https://github.com/begumzubeda64/serviceworkzubu.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-static": "^1.2.6",
+    "web-midi-api": "^2.0.8",
+    "web-push": "^3.4.4"
+  }
+}

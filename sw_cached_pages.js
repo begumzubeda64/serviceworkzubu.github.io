@@ -1,15 +1,15 @@
 const cacheName = 'v1';
 
 const cacheAssets = [
-    'css/bootstrap.css',
-    'js/bootstrap.js',
-    'js/popper.js',
-    'js/jquery.js',
-    'js/main.js',
-    'home.html',
-    'about.html'
+    '',
+   './main.js',
+   './main2.js',
+   './js/bootstrap.min.js',
+   './js/jquery.js',
+   './js/popper.js',
+   './bootstrap.min.css',
+   './home.html'
 ];
-
 //Call Install event
 self.addEventListener('install', e => {
     console.log("Service worker: Installed");

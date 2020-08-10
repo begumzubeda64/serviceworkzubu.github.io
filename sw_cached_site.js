@@ -12,6 +12,7 @@ self.addEventListener('activate', e => {
     //remove unwanted caches
     e.waitUntil(
         caches.keys().then(cacheNames => {
+            console.log("Fetching");
             return Promise.all(
                 cacheNames.map(cache => {
                     if(cache !== cacheName){
@@ -26,19 +27,19 @@ self.addEventListener('activate', e => {
 
 //Call Fetch Event
 self.addEventListener('fetch', e => {
-    console.log('Service worker: Fetching');
-    e.respondWith(
-        fetch(e.request)
-        .then(res => {
-            //Make copy/clone of response
-            const resClone = res.clone();
-            //Open cache
-            caches
-            .open(cacheName)
-            .then(cache => {
-                //Add response to cache
-                cache.put(e.request, resClone);
-            });
-            return res;
-        }).catch(err => caches.match(e.request).then(res => res)));
+  console.log('Service worker: Fetching');
+  e.respondWith(
+      fetch(e.request)
+      .then(res => {
+          //Make copy/clone of response
+          const resClone = res.clone();
+          //Open cache
+          caches
+          .open(cacheName)
+          .then(cache => {
+              //Add response to cache
+              cache.put(e.request, resClone);
+          });
+          return res;
+      }).catch(err => caches.match(e.request).then(res => res)));
 });
